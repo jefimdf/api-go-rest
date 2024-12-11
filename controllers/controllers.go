@@ -23,6 +23,7 @@ func TodasPersonalidades(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(p)
 }
 func RetornaUmaPersonalidade(w http.ResponseWriter, r *http.Request) {
+
 	vars := mux.Vars(r)
 	id := vars["id"]
 
